@@ -30,7 +30,68 @@
 		05491C3E2A77B854008C59A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05491C052A77B854008C59A5 /* Assets.xcassets */; };
 		05491C3F2A77B854008C59A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05491C052A77B854008C59A5 /* Assets.xcassets */; };
 		05491C402A77B854008C59A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05491C052A77B854008C59A5 /* Assets.xcassets */; };
+		059E80B82A7A50D90069EF60 /* Bowling_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80B72A7A50D90069EF60 /* Bowling_GameApp.swift */; };
+		059E80BA2A7A50D90069EF60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80B92A7A50D90069EF60 /* ContentView.swift */; };
+		059E80BF2A7A50DA0069EF60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059E80BE2A7A50DA0069EF60 /* Preview Assets.xcassets */; };
+		059E80C92A7A50DA0069EF60 /* Bowling_Game_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80C82A7A50DA0069EF60 /* Bowling_Game_Watch_AppTests.swift */; };
+		059E80D32A7A50DA0069EF60 /* Bowling_Game_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80D22A7A50DA0069EF60 /* Bowling_Game_Watch_AppUITests.swift */; };
+		059E80D52A7A50DA0069EF60 /* Bowling_Game_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80D42A7A50DA0069EF60 /* Bowling_Game_Watch_AppUITestsLaunchTests.swift */; };
+		059E80D82A7A50DA0069EF60 /* Bowling Game Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 059E80B52A7A50D90069EF60 /* Bowling Game Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		059E80E32A7A515E0069EF60 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80AF2A7A4F450069EF60 /* MotionManager.swift */; };
+		059E80E52A7A56620069EF60 /* RunningBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80E42A7A56620069EF60 /* RunningBuffer.swift */; };
+		05D11B782A7F97F600AE174B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B772A7F97F600AE174B /* art.scnassets */; };
+		05D11B792A7F97F600AE174B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B772A7F97F600AE174B /* art.scnassets */; };
+		05D11B7A2A7F97F600AE174B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B772A7F97F600AE174B /* art.scnassets */; };
+		05D11B7D2A7F9F9200AE174B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B7C2A7F9F9200AE174B /* UIViewControllerExtension.swift */; };
+		05D11B7E2A7F9F9200AE174B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B7C2A7F9F9200AE174B /* UIViewControllerExtension.swift */; };
+		05D11B7F2A7F9F9200AE174B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B7C2A7F9F9200AE174B /* UIViewControllerExtension.swift */; };
+		05D11B812A7F9FBB00AE174B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B802A7F9FBB00AE174B /* UIViewExtension.swift */; };
+		05D11B822A7F9FBB00AE174B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B802A7F9FBB00AE174B /* UIViewExtension.swift */; };
+		05D11B832A7F9FBB00AE174B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B802A7F9FBB00AE174B /* UIViewExtension.swift */; };
+		05D11B872A7FA13100AE174B /* BallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B862A7FA13100AE174B /* BallViewController.swift */; };
+		05D11B882A7FA13100AE174B /* BallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B862A7FA13100AE174B /* BallViewController.swift */; };
+		05D11B892A7FA13100AE174B /* BallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B862A7FA13100AE174B /* BallViewController.swift */; };
+		05D11B8C2A7FA31500AE174B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B8B2A7FA31500AE174B /* Assets.xcassets */; };
+		05E1E2ED2A7A6C27009AAA4E /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E1E2EC2A7A6C27009AAA4E /* WorkoutManager.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		059E80C52A7A50DA0069EF60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05491BFD2A77B852008C59A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 059E80B42A7A50D90069EF60;
+			remoteInfo = "Bowling Game Watch App";
+		};
+		059E80CF2A7A50DA0069EF60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05491BFD2A77B852008C59A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 059E80B42A7A50D90069EF60;
+			remoteInfo = "Bowling Game Watch App";
+		};
+		059E80D62A7A50DA0069EF60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05491BFD2A77B852008C59A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 059E80B42A7A50D90069EF60;
+			remoteInfo = "Bowling Game Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		059E80DC2A7A50DA0069EF60 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				059E80D82A7A50DA0069EF60 /* Bowling Game Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		05491C022A77B853008C59A5 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -52,6 +113,25 @@
 		05491C2F2A77B854008C59A5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		05491C322A77B854008C59A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05491C342A77B854008C59A5 /* Bowling_Game_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bowling_Game_macOS.entitlements; sourceTree = "<group>"; };
+		059E80AF2A7A4F450069EF60 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		059E80B52A7A50D90069EF60 /* Bowling Game Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bowling Game Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		059E80B72A7A50D90069EF60 /* Bowling_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowling_GameApp.swift; sourceTree = "<group>"; };
+		059E80B92A7A50D90069EF60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		059E80BE2A7A50DA0069EF60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		059E80C42A7A50DA0069EF60 /* Bowling Game Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bowling Game Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		059E80C82A7A50DA0069EF60 /* Bowling_Game_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowling_Game_Watch_AppTests.swift; sourceTree = "<group>"; };
+		059E80CE2A7A50DA0069EF60 /* Bowling Game Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bowling Game Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		059E80D22A7A50DA0069EF60 /* Bowling_Game_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowling_Game_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		059E80D42A7A50DA0069EF60 /* Bowling_Game_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowling_Game_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		059E80E42A7A56620069EF60 /* RunningBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningBuffer.swift; sourceTree = "<group>"; };
+		05C3B3C82A7CD98300607281 /* Bowling Game Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bowling Game Watch App.entitlements"; sourceTree = "<group>"; };
+		05D11B772A7F97F600AE174B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		05D11B7C2A7F9F9200AE174B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		05D11B802A7F9FBB00AE174B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		05D11B862A7FA13100AE174B /* BallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallViewController.swift; sourceTree = "<group>"; };
+		05D11B8B2A7FA31500AE174B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Bowling Game Watch App/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
+		05E1E2EB2A7A6997009AAA4E /* Bowling-Game-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bowling-Game-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		05E1E2EC2A7A6C27009AAA4E /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +156,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		059E80B22A7A50D90069EF60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		059E80C12A7A50DA0069EF60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		059E80CB2A7A50DA0069EF60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +187,9 @@
 				05491C0C2A77B854008C59A5 /* Bowling Game iOS */,
 				05491C1C2A77B854008C59A5 /* Bowling Game tvOS */,
 				05491C2C2A77B854008C59A5 /* Bowling Game macOS */,
+				059E80B62A7A50D90069EF60 /* Bowling Game Watch App */,
+				059E80C72A7A50DA0069EF60 /* Bowling Game Watch AppTests */,
+				059E80D12A7A50DA0069EF60 /* Bowling Game Watch AppUITests */,
 				05491C0B2A77B854008C59A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +197,9 @@
 		05491C012A77B852008C59A5 /* Bowling Game Shared */ = {
 			isa = PBXGroup;
 			children = (
+				05D11B842A7FA0EE00AE174B /* Component */,
+				05D11B7B2A7F9F8000AE174B /* Extension */,
+				05D11B772A7F97F600AE174B /* art.scnassets */,
 				05491C022A77B853008C59A5 /* Actions.sks */,
 				05491C032A77B853008C59A5 /* GameScene.sks */,
 				05491C042A77B853008C59A5 /* GameScene.swift */,
@@ -107,6 +214,9 @@
 				05491C0A2A77B854008C59A5 /* Bowling Game.app */,
 				05491C1B2A77B854008C59A5 /* Bowling Game.app */,
 				05491C2B2A77B854008C59A5 /* Bowling Game.app */,
+				059E80B52A7A50D90069EF60 /* Bowling Game Watch App.app */,
+				059E80C42A7A50DA0069EF60 /* Bowling Game Watch AppTests.xctest */,
+				059E80CE2A7A50DA0069EF60 /* Bowling Game Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +254,72 @@
 			path = "Bowling Game macOS";
 			sourceTree = "<group>";
 		};
+		059E80B62A7A50D90069EF60 /* Bowling Game Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				05C3B3C82A7CD98300607281 /* Bowling Game Watch App.entitlements */,
+				05E1E2EB2A7A6997009AAA4E /* Bowling-Game-Watch-App-Info.plist */,
+				05E1E2EC2A7A6C27009AAA4E /* WorkoutManager.swift */,
+				059E80AF2A7A4F450069EF60 /* MotionManager.swift */,
+				059E80E42A7A56620069EF60 /* RunningBuffer.swift */,
+				059E80B72A7A50D90069EF60 /* Bowling_GameApp.swift */,
+				059E80B92A7A50D90069EF60 /* ContentView.swift */,
+				05D11B8B2A7FA31500AE174B /* Assets.xcassets */,
+				059E80BD2A7A50DA0069EF60 /* Preview Content */,
+			);
+			path = "Bowling Game Watch App";
+			sourceTree = "<group>";
+		};
+		059E80BD2A7A50DA0069EF60 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				059E80BE2A7A50DA0069EF60 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		059E80C72A7A50DA0069EF60 /* Bowling Game Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				059E80C82A7A50DA0069EF60 /* Bowling_Game_Watch_AppTests.swift */,
+			);
+			path = "Bowling Game Watch AppTests";
+			sourceTree = "<group>";
+		};
+		059E80D12A7A50DA0069EF60 /* Bowling Game Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				059E80D22A7A50DA0069EF60 /* Bowling_Game_Watch_AppUITests.swift */,
+				059E80D42A7A50DA0069EF60 /* Bowling_Game_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Bowling Game Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		05D11B7B2A7F9F8000AE174B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				05D11B7C2A7F9F9200AE174B /* UIViewControllerExtension.swift */,
+				05D11B802A7F9FBB00AE174B /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		05D11B842A7FA0EE00AE174B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				05D11B8A2A7FA1D700AE174B /* SceneView */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		05D11B8A2A7FA1D700AE174B /* SceneView */ = {
+			isa = PBXGroup;
+			children = (
+				05D11B862A7FA13100AE174B /* BallViewController.swift */,
+			);
+			path = SceneView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,10 +330,12 @@
 				05491C062A77B854008C59A5 /* Sources */,
 				05491C072A77B854008C59A5 /* Frameworks */,
 				05491C082A77B854008C59A5 /* Resources */,
+				059E80DC2A7A50DA0069EF60 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				059E80D72A7A50DA0069EF60 /* PBXTargetDependency */,
 			);
 			name = "Bowling Game iOS";
 			productName = "Bowling Game iOS";
@@ -198,6 +376,59 @@
 			productReference = 05491C2B2A77B854008C59A5 /* Bowling Game.app */;
 			productType = "com.apple.product-type.application";
 		};
+		059E80B42A7A50D90069EF60 /* Bowling Game Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 059E80D92A7A50DA0069EF60 /* Build configuration list for PBXNativeTarget "Bowling Game Watch App" */;
+			buildPhases = (
+				059E80B12A7A50D90069EF60 /* Sources */,
+				059E80B22A7A50D90069EF60 /* Frameworks */,
+				059E80B32A7A50D90069EF60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bowling Game Watch App";
+			productName = "Bowling Game Watch App";
+			productReference = 059E80B52A7A50D90069EF60 /* Bowling Game Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		059E80C32A7A50DA0069EF60 /* Bowling Game Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 059E80DD2A7A50DA0069EF60 /* Build configuration list for PBXNativeTarget "Bowling Game Watch AppTests" */;
+			buildPhases = (
+				059E80C02A7A50DA0069EF60 /* Sources */,
+				059E80C12A7A50DA0069EF60 /* Frameworks */,
+				059E80C22A7A50DA0069EF60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				059E80C62A7A50DA0069EF60 /* PBXTargetDependency */,
+			);
+			name = "Bowling Game Watch AppTests";
+			productName = "Bowling Game Watch AppTests";
+			productReference = 059E80C42A7A50DA0069EF60 /* Bowling Game Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		059E80CD2A7A50DA0069EF60 /* Bowling Game Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 059E80E02A7A50DA0069EF60 /* Build configuration list for PBXNativeTarget "Bowling Game Watch AppUITests" */;
+			buildPhases = (
+				059E80CA2A7A50DA0069EF60 /* Sources */,
+				059E80CB2A7A50DA0069EF60 /* Frameworks */,
+				059E80CC2A7A50DA0069EF60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				059E80D02A7A50DA0069EF60 /* PBXTargetDependency */,
+			);
+			name = "Bowling Game Watch AppUITests";
+			productName = "Bowling Game Watch AppUITests";
+			productReference = 059E80CE2A7A50DA0069EF60 /* Bowling Game Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -217,6 +448,17 @@
 					05491C2A2A77B854008C59A5 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
+					059E80B42A7A50D90069EF60 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					059E80C32A7A50DA0069EF60 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 059E80B42A7A50D90069EF60;
+					};
+					059E80CD2A7A50DA0069EF60 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 059E80B42A7A50D90069EF60;
+					};
 				};
 			};
 			buildConfigurationList = 05491C002A77B852008C59A5 /* Build configuration list for PBXProject "Bowling Game" */;
@@ -235,6 +477,9 @@
 				05491C092A77B854008C59A5 /* Bowling Game iOS */,
 				05491C1A2A77B854008C59A5 /* Bowling Game tvOS */,
 				05491C2A2A77B854008C59A5 /* Bowling Game macOS */,
+				059E80B42A7A50D90069EF60 /* Bowling Game Watch App */,
+				059E80C32A7A50DA0069EF60 /* Bowling Game Watch AppTests */,
+				059E80CD2A7A50DA0069EF60 /* Bowling Game Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05491C382A77B854008C59A5 /* GameScene.sks in Resources */,
+				05D11B782A7F97F600AE174B /* art.scnassets in Resources */,
 				05491C132A77B854008C59A5 /* Main.storyboard in Resources */,
 				05491C352A77B854008C59A5 /* Actions.sks in Resources */,
 				05491C162A77B854008C59A5 /* LaunchScreen.storyboard in Resources */,
@@ -257,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05491C392A77B854008C59A5 /* GameScene.sks in Resources */,
+				05D11B792A7F97F600AE174B /* art.scnassets in Resources */,
 				05491C232A77B854008C59A5 /* Main.storyboard in Resources */,
 				05491C362A77B854008C59A5 /* Actions.sks in Resources */,
 				05491C262A77B854008C59A5 /* LaunchScreen.storyboard in Resources */,
@@ -270,8 +517,32 @@
 			files = (
 				05491C332A77B854008C59A5 /* Main.storyboard in Resources */,
 				05491C3A2A77B854008C59A5 /* GameScene.sks in Resources */,
+				05D11B7A2A7F97F600AE174B /* art.scnassets in Resources */,
 				05491C402A77B854008C59A5 /* Assets.xcassets in Resources */,
 				05491C372A77B854008C59A5 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		059E80B32A7A50D90069EF60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D11B8C2A7FA31500AE174B /* Assets.xcassets in Resources */,
+				059E80BF2A7A50DA0069EF60 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		059E80C22A7A50DA0069EF60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		059E80CC2A7A50DA0069EF60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +553,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D11B812A7F9FBB00AE174B /* UIViewExtension.swift in Sources */,
 				05491C3B2A77B854008C59A5 /* GameScene.swift in Sources */,
 				05491C102A77B854008C59A5 /* GameViewController.swift in Sources */,
+				05D11B872A7FA13100AE174B /* BallViewController.swift in Sources */,
+				05D11B7D2A7F9F9200AE174B /* UIViewControllerExtension.swift in Sources */,
 				05491C0E2A77B854008C59A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,8 +566,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D11B822A7F9FBB00AE174B /* UIViewExtension.swift in Sources */,
 				05491C3C2A77B854008C59A5 /* GameScene.swift in Sources */,
 				05491C202A77B854008C59A5 /* GameViewController.swift in Sources */,
+				05D11B882A7FA13100AE174B /* BallViewController.swift in Sources */,
+				05D11B7E2A7F9F9200AE174B /* UIViewControllerExtension.swift in Sources */,
 				05491C1E2A77B854008C59A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,13 +579,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D11B832A7F9FBB00AE174B /* UIViewExtension.swift in Sources */,
 				05491C3D2A77B854008C59A5 /* GameScene.swift in Sources */,
 				05491C302A77B854008C59A5 /* GameViewController.swift in Sources */,
+				05D11B892A7FA13100AE174B /* BallViewController.swift in Sources */,
+				05D11B7F2A7F9F9200AE174B /* UIViewControllerExtension.swift in Sources */,
 				05491C2E2A77B854008C59A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		059E80B12A7A50D90069EF60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059E80BA2A7A50D90069EF60 /* ContentView.swift in Sources */,
+				059E80E52A7A56620069EF60 /* RunningBuffer.swift in Sources */,
+				05E1E2ED2A7A6C27009AAA4E /* WorkoutManager.swift in Sources */,
+				059E80E32A7A515E0069EF60 /* MotionManager.swift in Sources */,
+				059E80B82A7A50D90069EF60 /* Bowling_GameApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		059E80C02A7A50DA0069EF60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059E80C92A7A50DA0069EF60 /* Bowling_Game_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		059E80CA2A7A50DA0069EF60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059E80D32A7A50DA0069EF60 /* Bowling_Game_Watch_AppUITests.swift in Sources */,
+				059E80D52A7A50DA0069EF60 /* Bowling_Game_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		059E80C62A7A50DA0069EF60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 059E80B42A7A50D90069EF60 /* Bowling Game Watch App */;
+			targetProxy = 059E80C52A7A50DA0069EF60 /* PBXContainerItemProxy */;
+		};
+		059E80D02A7A50DA0069EF60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 059E80B42A7A50D90069EF60 /* Bowling Game Watch App */;
+			targetProxy = 059E80CF2A7A50DA0069EF60 /* PBXContainerItemProxy */;
+		};
+		059E80D72A7A50DA0069EF60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 059E80B42A7A50D90069EF60 /* Bowling Game Watch App */;
+			targetProxy = 059E80D62A7A50DA0069EF60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		05491C112A77B854008C59A5 /* Main.storyboard */ = {
@@ -466,12 +793,13 @@
 		05491C442A77B854008C59A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BJAYFXKN5Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Bowling Game";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.family-games";
@@ -500,12 +828,13 @@
 		05491C452A77B854008C59A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BJAYFXKN5Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Bowling Game";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.family-games";
@@ -647,6 +976,157 @@
 			};
 			name = Release;
 		};
+		059E80DA2A7A50DA0069EF60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bowling Game Watch App/Bowling Game Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bowling Game Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = BJAYFXKN5Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bowling-Game-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bowling Game";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.ADA-MC3.Bowling-Game";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ADA-MC3.Bowling-Game.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		059E80DB2A7A50DA0069EF60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bowling Game Watch App/Bowling Game Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bowling Game Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = BJAYFXKN5Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bowling-Game-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bowling Game";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.ADA-MC3.Bowling-Game";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ADA-MC3.Bowling-Game.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		059E80DE2A7A50DA0069EF60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BJAYFXKN5Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ADA-MC3.Bowling-Game-watchOS.Bowling-Game-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bowling Game Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bowling Game Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		059E80DF2A7A50DA0069EF60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BJAYFXKN5Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ADA-MC3.Bowling-Game-watchOS.Bowling-Game-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bowling Game Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bowling Game Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+		059E80E12A7A50DA0069EF60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BJAYFXKN5Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ADA-MC3.Bowling-Game-watchOS.Bowling-Game-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Bowling Game Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		059E80E22A7A50DA0069EF60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BJAYFXKN5Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ADA-MC3.Bowling-Game-watchOS.Bowling-Game-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Bowling Game Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -682,6 +1162,33 @@
 			buildConfigurations = (
 				05491C4A2A77B854008C59A5 /* Debug */,
 				05491C4B2A77B854008C59A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		059E80D92A7A50DA0069EF60 /* Build configuration list for PBXNativeTarget "Bowling Game Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				059E80DA2A7A50DA0069EF60 /* Debug */,
+				059E80DB2A7A50DA0069EF60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		059E80DD2A7A50DA0069EF60 /* Build configuration list for PBXNativeTarget "Bowling Game Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				059E80DE2A7A50DA0069EF60 /* Debug */,
+				059E80DF2A7A50DA0069EF60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		059E80E02A7A50DA0069EF60 /* Build configuration list for PBXNativeTarget "Bowling Game Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				059E80E12A7A50DA0069EF60 /* Debug */,
+				059E80E22A7A50DA0069EF60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
