@@ -46,17 +46,9 @@ class BowlingRefViewController: UIViewController {
         scene = SCNScene(named: "../art-ref.scnassets/ally.scn")
         
         // Add ball scene
-        ball = bowlingRefScene.makeBallNode()
-        ball.position = SCNVector3Make(0, 0, 0)
+        ball = bowlingRefScene.makeBallNode(imageName: "art.scnassets/ball")
+        ball.position = SCNVector3(x: 0, y: 0.3, z: 12)
         scene.rootNode.addChildNode(ball)
-        
-        // Create and add an ambient light to the scene
-        let ambientLightNode = SCNNode()
-        ambientLightNode.light = SCNLight()
-        ambientLightNode.light!.type = .ambient
-        ambientLightNode.light!.color = UIColor.darkGray
-        ambientLightNode.light!.intensity = 50
-        scene.rootNode.addChildNode(ambientLightNode)
     }
 }
 
