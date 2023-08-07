@@ -9,8 +9,11 @@ import Foundation
 import CoreMotion
 import WatchKit
 import HealthKit
+import WatchConnectivity
 
-class MotionManager {
+class MotionManager: SessionDelegate {
+    var sessionDelegater: SessionDelegater!
+    
     let motionManager = CMMotionManager()
     let queue = OperationQueue()
     let wristLocationIsRight = WKInterfaceDevice.current().wristLocation == .right
@@ -22,9 +25,6 @@ class MotionManager {
     let yawThreshold = 1.95 // Radians
     let rateThreshold = 5.5    // Radians/sec
     let resetThreshold = 5.5 * 0.05 // To avoid double counting on the return swing.
-    
-    // The app is using 50hz data and the buffer is going to hold 1s worth of data.
-//    let sampleInterval = 1.0 / 50
     
     // The app is using 50hz data and the buffer is going to hold 5s worth of data.
     let sampleInterval = 5.0 / 50
@@ -42,7 +42,6 @@ class MotionManager {
     
     // MARK: Start Motion Manager
     func startUpdates() {
-//        print("updated!")
         if !motionManager.isDeviceMotionAvailable {
             print("Device Motion is not available.")
             return
@@ -50,6 +49,9 @@ class MotionManager {
         
         // Reset everything when we start.
         resetAllState()
+        
+        sessionDelegater = SessionDelegater()
+        sessionDelegater.delegate = self
         
         // How often we should record a measurement.
         motionManager.deviceMotionUpdateInterval = sampleInterval
@@ -68,7 +70,6 @@ class MotionManager {
     
     // MARK: Motion Processing
     func processDeviceMotion(_ deviceMotion: CMDeviceMotion) {
-//        let gravity = deviceMotion.gravity
         let rotationRate = deviceMotion.rotationRate
         let acceleration = deviceMotion.userAcceleration
         
@@ -102,6 +103,9 @@ class MotionManager {
             print("Throw distance: \(distance)")
             print("Throw direction: \(throwDirection)")
             
+            // Send data to iWatch
+            sendDistanceAndDirectionToWatch(distance: distance, direction: throwDirection)
+            
             resetAllState()
         }
 
@@ -117,5 +121,17 @@ class MotionManager {
         distance = 0.0
         throwDirection = (0.0, 0.0, 0.0)
         swingCount = 0
+    }
+    
+    // Conform to SessionDelegate methods
+    func didReceiveData(distance: Double, direction: [Double]) {
+        // Handle the received data
+        print("Received distance on iWatch: \(distance), direction x: \(direction[0]), direction x: \(direction[1]), direction x: \(direction[2])")
+    }
+    
+    // Function to send distance and direction data to the paired Apple Watch
+    func sendDistanceAndDirectionToWatch(distance: Double, direction: (x: Double, y: Double, z: Double)) {
+        let data: [String: Any] = ["distance": distance, "direction": [direction.x, direction.y, direction.z]]
+        sessionDelegater.session.sendMessage(data, replyHandler: nil, errorHandler: nil)
     }
 }

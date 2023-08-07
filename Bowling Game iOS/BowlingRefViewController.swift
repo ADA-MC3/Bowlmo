@@ -7,8 +7,11 @@
 
 import UIKit
 import SceneKit
+import WatchConnectivity
 
-class BowlingRefViewController: UIViewController {
+class BowlingRefViewController: UIViewController, SessionDelegate {
+    var sessionDelegater: SessionDelegater!
+    
     var sceneView: SCNView!
     var scene: SCNScene!
     var bowlingRefScene = BowlingRefScene()
@@ -24,6 +27,9 @@ class BowlingRefViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        sessionDelegater = SessionDelegater()
+        sessionDelegater.delegate = self
+        
         bowlingRefScene = BowlingRefScene()
         
         // Set up Scene
@@ -38,7 +44,6 @@ class BowlingRefViewController: UIViewController {
         // allows the user to manipulate the camera
         sceneView.allowsCameraControl = true
         self.view.addSubview(sceneView)
-        
     }
     
     func setUpScene() {
@@ -49,6 +54,12 @@ class BowlingRefViewController: UIViewController {
         ball = bowlingRefScene.makeBallNode(imageName: "art.scnassets/ball")
         ball.position = SCNVector3(x: 0, y: 0.3, z: 12)
         scene.rootNode.addChildNode(ball)
+    }
+    
+    // Conform to SessionDelegate methods
+    func didReceiveData(distance: Double, direction: [Double]) {
+        // Handle the received data
+        print("Received distance on iOS: \(distance), direction x: \(direction[0]), direction x: \(direction[1]), direction x: \(direction[2])")
     }
 }
 

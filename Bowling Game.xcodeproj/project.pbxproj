@@ -30,6 +30,8 @@
 		05491C3E2A77B854008C59A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05491C052A77B854008C59A5 /* Assets.xcassets */; };
 		05491C3F2A77B854008C59A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05491C052A77B854008C59A5 /* Assets.xcassets */; };
 		05491C402A77B854008C59A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05491C052A77B854008C59A5 /* Assets.xcassets */; };
+		0572B09E2A80E4B700E9533D /* SessionDelegater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572B09D2A80E4B700E9533D /* SessionDelegater.swift */; };
+		0572B09F2A80E4B700E9533D /* SessionDelegater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572B09D2A80E4B700E9533D /* SessionDelegater.swift */; };
 		05796A882A80A96400A36A97 /* BowlingRefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05796A872A80A96400A36A97 /* BowlingRefViewController.swift */; };
 		059E80B82A7A50D90069EF60 /* Bowling_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80B72A7A50D90069EF60 /* Bowling_GameApp.swift */; };
 		059E80BA2A7A50D90069EF60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80B92A7A50D90069EF60 /* ContentView.swift */; };
@@ -122,6 +124,7 @@
 		05491C2F2A77B854008C59A5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		05491C322A77B854008C59A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05491C342A77B854008C59A5 /* Bowling_Game_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bowling_Game_macOS.entitlements; sourceTree = "<group>"; };
+		0572B09D2A80E4B700E9533D /* SessionDelegater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegater.swift; sourceTree = "<group>"; };
 		05796A872A80A96400A36A97 /* BowlingRefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingRefViewController.swift; sourceTree = "<group>"; };
 		059E80AF2A7A4F450069EF60 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		059E80B52A7A50D90069EF60 /* Bowling Game Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bowling Game Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +220,7 @@
 				05491C032A77B853008C59A5 /* GameScene.sks */,
 				05491C042A77B853008C59A5 /* GameScene.swift */,
 				05D11B982A809FCA00AE174B /* BowlingRefScene.swift */,
+				0572B09D2A80E4B700E9533D /* SessionDelegater.swift */,
 				05491C052A77B854008C59A5 /* Assets.xcassets */,
 			);
 			path = "Bowling Game Shared";
@@ -572,6 +576,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0572B09E2A80E4B700E9533D /* SessionDelegater.swift in Sources */,
 				05D11B812A7F9FBB00AE174B /* UIViewExtension.swift in Sources */,
 				05491C3B2A77B854008C59A5 /* GameScene.swift in Sources */,
 				05D11B992A809FCA00AE174B /* BowlingRefScene.swift in Sources */,
@@ -617,6 +622,7 @@
 			files = (
 				059E80BA2A7A50D90069EF60 /* ContentView.swift in Sources */,
 				059E80E52A7A56620069EF60 /* RunningBuffer.swift in Sources */,
+				0572B09F2A80E4B700E9533D /* SessionDelegater.swift in Sources */,
 				05E1E2ED2A7A6C27009AAA4E /* WorkoutManager.swift in Sources */,
 				05D11B9C2A809FCA00AE174B /* BowlingRefScene.swift in Sources */,
 				059E80E32A7A515E0069EF60 /* MotionManager.swift in Sources */,
