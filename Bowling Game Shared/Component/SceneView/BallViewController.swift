@@ -50,7 +50,6 @@ import SwiftUI
 @available(iOS 13, *)
 struct BallViewController_Preview: PreviewProvider {
     static var previews: some View {
-        // view controller using programmatic UI
         BallViewController().showPreview()
     }
 }

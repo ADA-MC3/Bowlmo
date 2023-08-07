@@ -37,3 +37,14 @@ class GameViewController: UIViewController {
         return true
     }
 }
+
+#if DEBUG
+import SwiftUI
+
+@available(iOS 13, *)
+struct GameViewController_Preview: PreviewProvider {
+    static var previews: some View {
+        GameViewController().showPreview()
+    }
+}
+#endif
