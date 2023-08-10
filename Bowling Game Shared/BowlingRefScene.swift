@@ -8,6 +8,10 @@
 import UIKit
 import SceneKit
 
+struct NodeData {
+    var node: SCNNode
+    var geometry: SCNGeometry?
+}
 class BowlingRefScene: SCNScene {
     override init () {
         super.init()
@@ -17,19 +21,18 @@ class BowlingRefScene: SCNScene {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func makeBallNode(imageName: String) -> SCNNode {
+    func makeBallNode(imageName: String) -> NodeData {
         let sphereGeometry = SCNSphere(radius: 0.3)
         
-        // Create a skybox material using a cube map texture
+        // Give the ball the color from an image
         let skyboxMaterial = SCNMaterial()
         skyboxMaterial.diffuse.contents = UIImage(named: imageName)
         
         sphereGeometry.materials = [skyboxMaterial]
         
         let sphereNode = SCNNode(geometry: sphereGeometry)
-        // Flip the sphere geometry inside out (since we're viewing it from the inside)
         sphereNode.geometry?.firstMaterial?.isDoubleSided = true
         
-        return sphereNode
+        return NodeData(node: sphereNode, geometry: sphereGeometry)
     }
 }

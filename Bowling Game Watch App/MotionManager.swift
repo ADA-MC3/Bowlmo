@@ -25,17 +25,14 @@ class MotionManager: SessionDelegate {
     let yawThreshold = 1.95 // Radians
     let rateThreshold = 5.5    // Radians/sec
     let resetThreshold = 5.5 * 0.05 // To avoid double counting on the return swing.
+    let minAccelerationMagnitude = 0.2
     
     // The app is using 50hz data and the buffer is going to hold 5s worth of data.
-    let sampleInterval = 5.0 / 50
+    let sampleInterval = 5.0 / 5.0
     let rateAlongGravityBuffer = RunningBuffer(size: 50)
-    
-    /// Swing counts.
-    var swingCount = 0
     
     private var startTime: TimeInterval = 0.0
     private var startAcceleration: Double = 0.0 // The start acceleration of the throw
-    private var startRotationRate: Double = 0.0
     private var distance: Double = 0.0
     private var throwDirection: (x: Double, y: Double, z: Double) = (0.0, 0.0, 0.0)
     
@@ -73,22 +70,22 @@ class MotionManager: SessionDelegate {
         let rotationRate = deviceMotion.rotationRate
         let acceleration = deviceMotion.userAcceleration
         
-        // Calculate the magnitude of the acceleration vector
+        // Calculate the magnitude of the acceleration vector (besar percepatan dari vektor dengan phytagoras)
         let accelerationMagnitude = sqrt(pow(acceleration.x, 2) + pow(acceleration.y, 2) + pow(acceleration.z, 2))
         
-        // Detect the start of the throw based on a threshold value (you may need to adjust this)
-        if self.startAcceleration == 0.0 && accelerationMagnitude > 1.5 {
+        // Detect the start of the throw based on a threshold value
+        if self.startAcceleration == 0.0 && accelerationMagnitude > minAccelerationMagnitude {
             startTime = deviceMotion.timestamp
             startAcceleration = accelerationMagnitude
-            startRotationRate = rotationRate.z
         }
         
         // Calculate the elapsed time since the start of the throw
         let elapsedTime = deviceMotion.timestamp - self.startTime
         
-        // If the throw has started, calculate the distance using a simple formula (you may need to adjust this)
+        // If the throw has started, calculate the distance using a simple formula
         if startAcceleration > 0.0 {
-            // Calculate distance using a simplified formula (you'll need to calibrate this based on real-world data)
+            // Use the initial acceleration (startAcceleration) as a substitute for the initial velocity (v0) with the asumtion that the acceleration remains relatively constant during the entire duration of the throw
+            // MARK: Formula -> d = v0.t + 1/2.a.t^2
             distance = 0.5 * startAcceleration * elapsedTime * elapsedTime
             
             // Get the direction of the throw from gyroscope data
@@ -97,11 +94,11 @@ class MotionManager: SessionDelegate {
         
         // Once the throw has ended (e.g., when acceleration drops below a threshold), stop tracking and use the calculated distance in your game logic
 
-        // For simplicity, let's assume the throw ends when the acceleration drops below 0.1
+        // Assume the throw ends when the acceleration drops below 0.1
         if (startAcceleration > 0.0) && (accelerationMagnitude < 0.1) {
-            // Use 'self.distance' in your game logic (e.g., to set the ball's initial velocity in SceneKit)
             print("Throw distance: \(distance)")
             print("Throw direction: \(throwDirection)")
+            print("Acceleration Magnitude: \(accelerationMagnitude)")
             
             // Send data to iWatch
             sendDistanceAndDirectionToWatch(distance: distance, direction: throwDirection)
@@ -120,13 +117,12 @@ class MotionManager: SessionDelegate {
         startAcceleration = 0.0
         distance = 0.0
         throwDirection = (0.0, 0.0, 0.0)
-        swingCount = 0
     }
     
     // Conform to SessionDelegate methods
     func didReceiveData(distance: Double, direction: [Double]) {
         // Handle the received data
-        print("Received distance on iWatch: \(distance), direction x: \(direction[0]), direction x: \(direction[1]), direction x: \(direction[2])")
+        print("Received distance on iWatch: \(distance), direction x: \(direction[0]), direction y: \(direction[1]), direction z: \(direction[2])")
     }
     
     // Function to send distance and direction data to the paired Apple Watch
