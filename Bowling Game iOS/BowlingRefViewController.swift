@@ -47,7 +47,7 @@ class BowlingRefViewController: UIViewController, SessionDelegate, SCNPhysicsCon
         // Make new Scene View
         sceneView = SCNView(frame: view.bounds)
         sceneView.backgroundColor = .black
-        sceneView.allowsCameraControl = true
+        sceneView.allowsCameraControl = false
         sceneView.scene = scene
         sceneView.delegate = self
         sceneView.scene?.physicsWorld.contactDelegate = self
@@ -60,6 +60,8 @@ class BowlingRefViewController: UIViewController, SessionDelegate, SCNPhysicsCon
     func setUpScene() {
         // Create a new scene
         scene = SCNScene(named: "../art-ref.scnassets/ally.scn")
+        
+        camera = scene.rootNode.childNode(withName: "mainCamera", recursively: true)!
         
         let ballNodeData: NodeData = bowlingRefScene.makeBallNode(imageName: "art.scnassets/ball")
         let ballShape = SCNPhysicsShape(geometry: ballNodeData.geometry!, options: nil)
@@ -85,6 +87,8 @@ class BowlingRefViewController: UIViewController, SessionDelegate, SCNPhysicsCon
         sunNode.light?.type = .directional
 
         scene.rootNode.addChildNode(sunNode)
+        
+        resetCamera()
     }
     
     // Conform to SessionDelegate methods
@@ -117,7 +121,6 @@ class BowlingRefViewController: UIViewController, SessionDelegate, SCNPhysicsCon
     }
     
     func throwTheBall() {
-        // MARK: Cara 2
         let direction = SCNVector3(
             x: throwingData.direction_x,
             y: throwingData.direction_y,
@@ -150,46 +153,44 @@ class BowlingRefViewController: UIViewController, SessionDelegate, SCNPhysicsCon
         return SCNVector3(0, 0, 0)
     }
     
-    func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
+    func renderer(_ renderer: SCNSceneRenderer, didSimulatePhysicsAtTime time: TimeInterval) {
         // Reset the ball position if the ball has done moving
-        if let ballPhysicsBody = ball.physicsBody, ballIsMoving {
-            // Get the ball's current velocity
-            let velocity = ballPhysicsBody.velocity
-            let speed = sqrt(velocity.x * velocity.x + velocity.y * velocity.y + velocity.z * velocity.z)
-
-            // If the ball's speed is below the threshold, consider it as stopped
-            if speed < ballRestThreshold {
-                ballIsMoving = false
-                resetTheBall()
-            }
-        }
         
-        // Reset ball position if the ball outside the camera's field of view
-        if sceneView.pointOfView != nil {
-            let ballPosition = ball.presentation.position
-            let projectedPosition = sceneView.projectPoint(ballPosition)
-            
-            // Convert CGFloat projectedPosition values to Float
-            let projectedPositionX = Float(projectedPosition.x)
-            let projectedPositionY = Float(projectedPosition.y)
-            
-            // Check if the projected position is within the screen bounds
-            DispatchQueue.main.async {
-                // UIView usage
-                if projectedPositionX < 0 || projectedPositionX > Float(self.sceneView.bounds.size.width) ||
-                    projectedPositionY < 0 || projectedPositionY > Float(self.sceneView.bounds.size.height) {
-                    
-                    self.resetTheBall()
+        if (ball.position.x > -0.5 || ball.presentation.position.x > 0.5) {
+            if ballIsMoving {
+                let velocity = ball.physicsBody!.velocity
+                let speed = sqrt(velocity.x * velocity.x + velocity.y * velocity.y + velocity.z * velocity.z)
+
+                // Jika bola bergerak ke depan (sumbu x+ bola ke depan)
+                if speed > ballRestThreshold {
+                    camera.look(at: ball.presentation.position)
+                    let ballOffset = ball.presentation.position.x
+                    if ballOffset > 6 {
+                        // Camera mengikuti bola (sumbu z- camera ke depan)
+                        camera.position.z = (-1) * (ballOffset - 8) // jarak camera dengan bola dari belakang bola
+                    }
+                } else {
+                    // If the ball's speed is below the threshold, consider it as stopped
+                    ballIsMoving = false
+                    resetTheBall()
+                    resetCamera()
                 }
             }
-            
+        } else {
+            print("No ball physics")
         }
     }
     
     func resetTheBall() {
         ball.physicsBody?.velocity = SCNVector3(x: 0, y: 0, z: 0)
         self.ball.physicsBody?.applyForce(SCNVector3(0, 0, 0), asImpulse: true)
-        ball.position = SCNVector3(x: -1.75, y: 0, z: 0) // x+: depan, y+: atas, z+: kanan
+        ball.position = SCNVector3(x: -1.75, y: 0, z: 0) // x+: forward, y+: top, z+: right
+        print("Reset ball position.")
+    }
+    
+    func resetCamera() {
+        camera.position = SCNVector3(x: 0, y: 3, z: 6) // z-: forward, y+: top, x+: right
+        camera.eulerAngles = SCNVector3(x: -0.34906608, y: 1.8424535e-14, z: 1.1805374e-07)
     }
 }
 
