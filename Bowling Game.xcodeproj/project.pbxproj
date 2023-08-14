@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		05491C0E2A77B854008C59A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05491C0D2A77B854008C59A5 /* AppDelegate.swift */; };
-		05491C102A77B854008C59A5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05491C0F2A77B854008C59A5 /* GameViewController.swift */; };
-		05491C132A77B854008C59A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05491C112A77B854008C59A5 /* Main.storyboard */; };
-		05491C162A77B854008C59A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05491C142A77B854008C59A5 /* LaunchScreen.storyboard */; };
 		05491C1E2A77B854008C59A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05491C1D2A77B854008C59A5 /* AppDelegate.swift */; };
 		05491C202A77B854008C59A5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05491C1F2A77B854008C59A5 /* GameViewController.swift */; };
 		05491C232A77B854008C59A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05491C212A77B854008C59A5 /* Main.storyboard */; };
@@ -32,9 +29,11 @@
 		05491C402A77B854008C59A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05491C052A77B854008C59A5 /* Assets.xcassets */; };
 		054AA4402A822E6900014122 /* ThrowingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054AA43F2A822E6900014122 /* ThrowingData.swift */; };
 		054AA4412A822E6900014122 /* ThrowingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054AA43F2A822E6900014122 /* ThrowingData.swift */; };
+		05587E642A8A11FA002E135A /* BowlingGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05587E632A8A11FA002E135A /* BowlingGameApp.swift */; };
+		05587E662A8A1275002E135A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05587E652A8A1275002E135A /* ContentView.swift */; };
 		0572B09E2A80E4B700E9533D /* SessionDelegater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572B09D2A80E4B700E9533D /* SessionDelegater.swift */; };
 		0572B09F2A80E4B700E9533D /* SessionDelegater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572B09D2A80E4B700E9533D /* SessionDelegater.swift */; };
-		05796A882A80A96400A36A97 /* BowlingRefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05796A872A80A96400A36A97 /* BowlingRefViewController.swift */; };
+		05796A882A80A96400A36A97 /* BowlingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05796A872A80A96400A36A97 /* BowlingViewController.swift */; };
 		059E80B82A7A50D90069EF60 /* Bowling_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80B72A7A50D90069EF60 /* Bowling_GameApp.swift */; };
 		059E80BA2A7A50D90069EF60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80B92A7A50D90069EF60 /* ContentView.swift */; };
 		059E80BF2A7A50DA0069EF60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059E80BE2A7A50DA0069EF60 /* Preview Assets.xcassets */; };
@@ -44,9 +43,6 @@
 		059E80D82A7A50DA0069EF60 /* Bowling Game Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 059E80B52A7A50D90069EF60 /* Bowling Game Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		059E80E32A7A515E0069EF60 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80AF2A7A4F450069EF60 /* MotionManager.swift */; };
 		059E80E52A7A56620069EF60 /* RunningBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80E42A7A56620069EF60 /* RunningBuffer.swift */; };
-		05D11B782A7F97F600AE174B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B772A7F97F600AE174B /* art.scnassets */; };
-		05D11B792A7F97F600AE174B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B772A7F97F600AE174B /* art.scnassets */; };
-		05D11B7A2A7F97F600AE174B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B772A7F97F600AE174B /* art.scnassets */; };
 		05D11B7D2A7F9F9200AE174B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B7C2A7F9F9200AE174B /* UIViewControllerExtension.swift */; };
 		05D11B7E2A7F9F9200AE174B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B7C2A7F9F9200AE174B /* UIViewControllerExtension.swift */; };
 		05D11B7F2A7F9F9200AE174B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B7C2A7F9F9200AE174B /* UIViewControllerExtension.swift */; };
@@ -57,14 +53,14 @@
 		05D11B882A7FA13100AE174B /* BallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B862A7FA13100AE174B /* BallViewController.swift */; };
 		05D11B892A7FA13100AE174B /* BallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B862A7FA13100AE174B /* BallViewController.swift */; };
 		05D11B8C2A7FA31500AE174B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B8B2A7FA31500AE174B /* Assets.xcassets */; };
-		05D11B942A809F5900AE174B /* art-ref.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B932A809F5900AE174B /* art-ref.scnassets */; };
-		05D11B952A809F5900AE174B /* art-ref.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B932A809F5900AE174B /* art-ref.scnassets */; };
-		05D11B962A809F5900AE174B /* art-ref.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B932A809F5900AE174B /* art-ref.scnassets */; };
-		05D11B972A809F5900AE174B /* art-ref.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B932A809F5900AE174B /* art-ref.scnassets */; };
-		05D11B992A809FCA00AE174B /* BowlingRefScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B982A809FCA00AE174B /* BowlingRefScene.swift */; };
-		05D11B9A2A809FCA00AE174B /* BowlingRefScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B982A809FCA00AE174B /* BowlingRefScene.swift */; };
-		05D11B9B2A809FCA00AE174B /* BowlingRefScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B982A809FCA00AE174B /* BowlingRefScene.swift */; };
-		05D11B9C2A809FCA00AE174B /* BowlingRefScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B982A809FCA00AE174B /* BowlingRefScene.swift */; };
+		05D11B942A809F5900AE174B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B932A809F5900AE174B /* art.scnassets */; };
+		05D11B952A809F5900AE174B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B932A809F5900AE174B /* art.scnassets */; };
+		05D11B962A809F5900AE174B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B932A809F5900AE174B /* art.scnassets */; };
+		05D11B972A809F5900AE174B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B932A809F5900AE174B /* art.scnassets */; };
+		05D11B992A809FCA00AE174B /* BowlingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B982A809FCA00AE174B /* BowlingScene.swift */; };
+		05D11B9A2A809FCA00AE174B /* BowlingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B982A809FCA00AE174B /* BowlingScene.swift */; };
+		05D11B9B2A809FCA00AE174B /* BowlingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B982A809FCA00AE174B /* BowlingScene.swift */; };
+		05D11B9C2A809FCA00AE174B /* BowlingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B982A809FCA00AE174B /* BowlingScene.swift */; };
 		05E1E2ED2A7A6C27009AAA4E /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E1E2EC2A7A6C27009AAA4E /* WorkoutManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -113,9 +109,6 @@
 		05491C052A77B854008C59A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05491C0A2A77B854008C59A5 /* Bowling Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bowling Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05491C0D2A77B854008C59A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05491C0F2A77B854008C59A5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		05491C122A77B854008C59A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		05491C152A77B854008C59A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05491C1B2A77B854008C59A5 /* Bowling Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bowling Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05491C1D2A77B854008C59A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05491C1F2A77B854008C59A5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -127,8 +120,10 @@
 		05491C322A77B854008C59A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05491C342A77B854008C59A5 /* Bowling_Game_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bowling_Game_macOS.entitlements; sourceTree = "<group>"; };
 		054AA43F2A822E6900014122 /* ThrowingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowingData.swift; sourceTree = "<group>"; };
+		05587E632A8A11FA002E135A /* BowlingGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingGameApp.swift; sourceTree = "<group>"; };
+		05587E652A8A1275002E135A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0572B09D2A80E4B700E9533D /* SessionDelegater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegater.swift; sourceTree = "<group>"; };
-		05796A872A80A96400A36A97 /* BowlingRefViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingRefViewController.swift; sourceTree = "<group>"; };
+		05796A872A80A96400A36A97 /* BowlingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingViewController.swift; sourceTree = "<group>"; };
 		059E80AF2A7A4F450069EF60 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		059E80B52A7A50D90069EF60 /* Bowling Game Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bowling Game Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		059E80B72A7A50D90069EF60 /* Bowling_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowling_GameApp.swift; sourceTree = "<group>"; };
@@ -141,13 +136,12 @@
 		059E80D42A7A50DA0069EF60 /* Bowling_Game_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowling_Game_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		059E80E42A7A56620069EF60 /* RunningBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningBuffer.swift; sourceTree = "<group>"; };
 		05C3B3C82A7CD98300607281 /* Bowling Game Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bowling Game Watch App.entitlements"; sourceTree = "<group>"; };
-		05D11B772A7F97F600AE174B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		05D11B7C2A7F9F9200AE174B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		05D11B802A7F9FBB00AE174B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		05D11B862A7FA13100AE174B /* BallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallViewController.swift; sourceTree = "<group>"; };
 		05D11B8B2A7FA31500AE174B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Bowling Game Watch App/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
-		05D11B932A809F5900AE174B /* art-ref.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = "art-ref.scnassets"; sourceTree = "<group>"; };
-		05D11B982A809FCA00AE174B /* BowlingRefScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingRefScene.swift; sourceTree = "<group>"; };
+		05D11B932A809F5900AE174B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		05D11B982A809FCA00AE174B /* BowlingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingScene.swift; sourceTree = "<group>"; };
 		05E1E2EB2A7A6997009AAA4E /* Bowling-Game-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bowling-Game-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		05E1E2EC2A7A6C27009AAA4E /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,12 +212,11 @@
 				054AA43E2A822E4C00014122 /* Model */,
 				05D11B842A7FA0EE00AE174B /* Component */,
 				05D11B7B2A7F9F8000AE174B /* Extension */,
-				05D11B932A809F5900AE174B /* art-ref.scnassets */,
-				05D11B772A7F97F600AE174B /* art.scnassets */,
+				05D11B932A809F5900AE174B /* art.scnassets */,
 				05491C022A77B853008C59A5 /* Actions.sks */,
 				05491C032A77B853008C59A5 /* GameScene.sks */,
 				05491C042A77B853008C59A5 /* GameScene.swift */,
-				05D11B982A809FCA00AE174B /* BowlingRefScene.swift */,
+				05D11B982A809FCA00AE174B /* BowlingScene.swift */,
 				0572B09D2A80E4B700E9533D /* SessionDelegater.swift */,
 				05491C052A77B854008C59A5 /* Assets.xcassets */,
 			);
@@ -246,11 +239,10 @@
 		05491C0C2A77B854008C59A5 /* Bowling Game iOS */ = {
 			isa = PBXGroup;
 			children = (
+				05587E652A8A1275002E135A /* ContentView.swift */,
+				05587E632A8A11FA002E135A /* BowlingGameApp.swift */,
 				05491C0D2A77B854008C59A5 /* AppDelegate.swift */,
-				05491C0F2A77B854008C59A5 /* GameViewController.swift */,
-				05796A872A80A96400A36A97 /* BowlingRefViewController.swift */,
-				05491C112A77B854008C59A5 /* Main.storyboard */,
-				05491C142A77B854008C59A5 /* LaunchScreen.storyboard */,
+				05796A872A80A96400A36A97 /* BowlingViewController.swift */,
 			);
 			path = "Bowling Game iOS";
 			sourceTree = "<group>";
@@ -521,11 +513,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05491C382A77B854008C59A5 /* GameScene.sks in Resources */,
-				05D11B942A809F5900AE174B /* art-ref.scnassets in Resources */,
-				05D11B782A7F97F600AE174B /* art.scnassets in Resources */,
-				05491C132A77B854008C59A5 /* Main.storyboard in Resources */,
+				05D11B942A809F5900AE174B /* art.scnassets in Resources */,
 				05491C352A77B854008C59A5 /* Actions.sks in Resources */,
-				05491C162A77B854008C59A5 /* LaunchScreen.storyboard in Resources */,
 				05491C3E2A77B854008C59A5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,8 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05491C392A77B854008C59A5 /* GameScene.sks in Resources */,
-				05D11B952A809F5900AE174B /* art-ref.scnassets in Resources */,
-				05D11B792A7F97F600AE174B /* art.scnassets in Resources */,
+				05D11B952A809F5900AE174B /* art.scnassets in Resources */,
 				05491C232A77B854008C59A5 /* Main.storyboard in Resources */,
 				05491C362A77B854008C59A5 /* Actions.sks in Resources */,
 				05491C262A77B854008C59A5 /* LaunchScreen.storyboard in Resources */,
@@ -550,8 +538,7 @@
 			files = (
 				05491C332A77B854008C59A5 /* Main.storyboard in Resources */,
 				05491C3A2A77B854008C59A5 /* GameScene.sks in Resources */,
-				05D11B7A2A7F97F600AE174B /* art.scnassets in Resources */,
-				05D11B962A809F5900AE174B /* art-ref.scnassets in Resources */,
+				05D11B962A809F5900AE174B /* art.scnassets in Resources */,
 				05491C402A77B854008C59A5 /* Assets.xcassets in Resources */,
 				05491C372A77B854008C59A5 /* Actions.sks in Resources */,
 			);
@@ -561,7 +548,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05D11B972A809F5900AE174B /* art-ref.scnassets in Resources */,
+				05D11B972A809F5900AE174B /* art.scnassets in Resources */,
 				05D11B8C2A7FA31500AE174B /* Assets.xcassets in Resources */,
 				059E80BF2A7A50DA0069EF60 /* Preview Assets.xcassets in Resources */,
 			);
@@ -590,14 +577,15 @@
 			files = (
 				0572B09E2A80E4B700E9533D /* SessionDelegater.swift in Sources */,
 				05D11B812A7F9FBB00AE174B /* UIViewExtension.swift in Sources */,
+				05587E662A8A1275002E135A /* ContentView.swift in Sources */,
 				05491C3B2A77B854008C59A5 /* GameScene.swift in Sources */,
-				05D11B992A809FCA00AE174B /* BowlingRefScene.swift in Sources */,
-				05491C102A77B854008C59A5 /* GameViewController.swift in Sources */,
+				05D11B992A809FCA00AE174B /* BowlingScene.swift in Sources */,
 				054AA4402A822E6900014122 /* ThrowingData.swift in Sources */,
 				05D11B872A7FA13100AE174B /* BallViewController.swift in Sources */,
 				05D11B7D2A7F9F9200AE174B /* UIViewControllerExtension.swift in Sources */,
 				05491C0E2A77B854008C59A5 /* AppDelegate.swift in Sources */,
-				05796A882A80A96400A36A97 /* BowlingRefViewController.swift in Sources */,
+				05796A882A80A96400A36A97 /* BowlingViewController.swift in Sources */,
+				05587E642A8A11FA002E135A /* BowlingGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,7 +595,7 @@
 			files = (
 				05D11B822A7F9FBB00AE174B /* UIViewExtension.swift in Sources */,
 				05491C3C2A77B854008C59A5 /* GameScene.swift in Sources */,
-				05D11B9A2A809FCA00AE174B /* BowlingRefScene.swift in Sources */,
+				05D11B9A2A809FCA00AE174B /* BowlingScene.swift in Sources */,
 				05491C202A77B854008C59A5 /* GameViewController.swift in Sources */,
 				05D11B882A7FA13100AE174B /* BallViewController.swift in Sources */,
 				05D11B7E2A7F9F9200AE174B /* UIViewControllerExtension.swift in Sources */,
@@ -621,7 +609,7 @@
 			files = (
 				05D11B832A7F9FBB00AE174B /* UIViewExtension.swift in Sources */,
 				05491C3D2A77B854008C59A5 /* GameScene.swift in Sources */,
-				05D11B9B2A809FCA00AE174B /* BowlingRefScene.swift in Sources */,
+				05D11B9B2A809FCA00AE174B /* BowlingScene.swift in Sources */,
 				05491C302A77B854008C59A5 /* GameViewController.swift in Sources */,
 				05D11B892A7FA13100AE174B /* BallViewController.swift in Sources */,
 				05D11B7F2A7F9F9200AE174B /* UIViewControllerExtension.swift in Sources */,
@@ -638,7 +626,7 @@
 				059E80E52A7A56620069EF60 /* RunningBuffer.swift in Sources */,
 				0572B09F2A80E4B700E9533D /* SessionDelegater.swift in Sources */,
 				05E1E2ED2A7A6C27009AAA4E /* WorkoutManager.swift in Sources */,
-				05D11B9C2A809FCA00AE174B /* BowlingRefScene.swift in Sources */,
+				05D11B9C2A809FCA00AE174B /* BowlingScene.swift in Sources */,
 				059E80E32A7A515E0069EF60 /* MotionManager.swift in Sources */,
 				059E80B82A7A50D90069EF60 /* Bowling_GameApp.swift in Sources */,
 			);
@@ -682,22 +670,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		05491C112A77B854008C59A5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05491C122A77B854008C59A5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		05491C142A77B854008C59A5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05491C152A77B854008C59A5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		05491C212A77B854008C59A5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

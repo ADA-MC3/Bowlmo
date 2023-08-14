@@ -1,5 +1,5 @@
 //
-//  BowlingRefViewController.swift
+//  BowlingViewController.swift
 //  Bowling Game
 //
 //  Created by Carissa Farry Hilmi Az Zahra on 07/08/23.
@@ -9,12 +9,12 @@ import UIKit
 import SceneKit
 import WatchConnectivity
 
-class BowlingRefViewController: UIViewController, SessionDelegate, SCNPhysicsContactDelegate, SCNSceneRendererDelegate {
+class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContactDelegate, SCNSceneRendererDelegate {
     var sessionDelegater: SessionDelegater!
     
     var sceneView: SCNView!
     var scene: SCNScene!
-    var bowlingRefScene = BowlingRefScene()
+    var bowlingScene: BowlingScene!
     
     var camera: SCNNode!
     var ball: SCNNode!
@@ -42,7 +42,7 @@ class BowlingRefViewController: UIViewController, SessionDelegate, SCNPhysicsCon
         sessionDelegater = SessionDelegater()
         sessionDelegater.delegate = self
         
-        bowlingRefScene = BowlingRefScene()
+        bowlingScene = BowlingScene()
         
         // Set up Scene
         setUpScene()
@@ -62,11 +62,11 @@ class BowlingRefViewController: UIViewController, SessionDelegate, SCNPhysicsCon
     
     func setUpScene() {
         // Create a new scene
-        scene = SCNScene(named: "../art-ref.scnassets/ally.scn")
+        scene = SCNScene(named: "../art.scnassets/ally.scn")
         
         camera = scene.rootNode.childNode(withName: "mainCamera", recursively: true)!
         
-        let ballNodeData: NodeData = bowlingRefScene.makeBallNode(imageName: "art.scnassets/ball")
+        let ballNodeData: NodeData = bowlingScene!.makeBallNode(imageName: "art.scnassets/ball")
         let ballShape = SCNPhysicsShape(geometry: ballNodeData.geometry!, options: nil)
         
         // Add ball scene
@@ -231,9 +231,9 @@ class BowlingRefViewController: UIViewController, SessionDelegate, SCNPhysicsCon
 import SwiftUI
 
 @available(iOS 13, *)
-struct BowlingRefViewController_Preview: PreviewProvider {
+struct BowlingViewController_Preview: PreviewProvider {
     static var previews: some View {
-        BowlingRefViewController().showPreview()
+        BowlingViewController().showPreview()
     }
 }
 #endif

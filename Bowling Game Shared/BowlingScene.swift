@@ -1,5 +1,5 @@
 //
-//  BowlingRefScene.swift
+//  BowlingScene.swift
 //  Bowling Game
 //
 //  Created by Carissa Farry Hilmi Az Zahra on 07/08/23.
@@ -12,7 +12,7 @@ struct NodeData {
     var node: SCNNode
     var geometry: SCNGeometry?
 }
-class BowlingRefScene: SCNScene {
+class BowlingScene: SCNScene {
     override init () {
         super.init()
     }
