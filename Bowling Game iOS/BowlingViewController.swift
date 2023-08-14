@@ -9,7 +9,7 @@ import UIKit
 import SceneKit
 import WatchConnectivity
 
-class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContactDelegate, SCNSceneRendererDelegate {
+class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContactDelegate, SCNSceneRendererDelegate, ObservableObject {
     var sessionDelegater: SessionDelegater!
     
     var sceneView: SCNView!
@@ -32,10 +32,9 @@ class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContac
     let forceScaleFactor: Float = 150.0 // allows to scale the forceMagnitude to a value that feels right within the context of the game
     
     var ballIsMoving = false
-    var ballRestThreshold: Float = 0.15
-    var arePinsHitted = false
+    var ballRestThreshold: Float = 0.01
     var countScore = false
-    var score = 0
+    @Published var score = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +64,7 @@ class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContac
         scene = SCNScene(named: "../art.scnassets/ally.scn")
         
         camera = scene.rootNode.childNode(withName: "mainCamera", recursively: true)!
+        pins = scene.rootNode.childNode(withName: "mainPins", recursively: true)!
         
         let ballNodeData: NodeData = bowlingScene!.makeBallNode(imageName: "art.scnassets/ball")
         let ballShape = SCNPhysicsShape(geometry: ballNodeData.geometry!, options: nil)
@@ -145,6 +145,19 @@ class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContac
         // Apply the force to the ball's physics body
         ball!.physicsBody?.applyForce(force, asImpulse: true)
         ballIsMoving = true
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 13) {
+            self.slowTheBall()
+        }
+        
+        // Schedule the ball reset after 10 seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 15) {
+            self.ballIsMoving = false
+            self.score = 0
+            self.resetTheBall()
+            self.resetCamera()
+            self.resetPins()
+        }
 
         print("ball throwed!")
     }
@@ -158,13 +171,16 @@ class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContac
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didSimulatePhysicsAtTime time: TimeInterval) {
+        let velocity = ball.physicsBody!.velocity
+        let speed = sqrt(velocity.x * velocity.x + velocity.y * velocity.y + velocity.z * velocity.z)
+        
         print("Ball position:")
         print(ball.presentation.position.x)
+        print("Ball speed:")
+        print(speed)
+        
         if (ball.position.x > -0.5 || ball.presentation.position.x > 0.5) && (ball.presentation.position.x < 33) {
             if ballIsMoving {
-                let velocity = ball.physicsBody!.velocity
-                let speed = sqrt(velocity.x * velocity.x + velocity.y * velocity.y + velocity.z * velocity.z)
-
                 // Jika bola bergerak ke depan (sumbu x+ bola ke depan)
                 if speed > ballRestThreshold {
                     camera.look(at: ball.presentation.position)
@@ -175,26 +191,20 @@ class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContac
                     }
                 } else { // If the ball's speed is below the threshold, consider it as stopped
                     ballIsMoving = false
-                    countScore = true
-                }
-            } else if countScore {
-                if arePinsHitted {
-                    DispatchQueue.main.async {
-                        self.score += 1
-                        self.arePinsHitted = false
-                        print("Score:")
-                        print(self.score)
+                    slowTheBall()
+                    
+                    // Schedule the ball reset after damping has taken effect
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                        self.score = 0
+                        self.resetTheBall()
+                        self.resetCamera()
+                        self.resetPins()
                     }
                 }
-                countScore = false
-                
-                // Reset position if the ball has done moving
-                resetTheBall()
-                resetCamera()
             }
         } else {
             // Reset the ball if the ball exit the arena
-            if ball.presentation.position.x > 33 {
+            if ball.presentation.position.x > 34 {
                 ballIsMoving = false
                 resetTheBall()
                 resetCamera()
@@ -203,22 +213,46 @@ class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContac
         }
     }
     
-    // Add event if there is collision between ball and the pins
+    // Add event if there is collision between ball and the pins to count the score
     func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
         if ballIsMoving {
             if contact.nodeA.name == "Ball" || contact.nodeB.name == "Pin" {
-                arePinsHitted = true
+                DispatchQueue.main.async {
+                    self.score += 1
+                    print("Score:")
+                    print(self.score)
+                }
+                
             } else if contact.nodeA.name == "Pin" && contact.nodeB.name == "Ball"{
-                arePinsHitted = true
+                DispatchQueue.main.async {
+                    self.score += 1
+                    print("Score:")
+                    print(self.score)
+                }
             }
         }
+    }
+    
+    func resetPins() {
+        (pins as! SCNReferenceNode).unload()
+        (pins as! SCNReferenceNode).load()
     }
     
     func resetTheBall() {
         ball.physicsBody?.velocity = SCNVector3(x: 0, y: 0, z: 0)
         self.ball.physicsBody?.applyForce(SCNVector3(0, 0, 0), asImpulse: true)
         ball.position = SCNVector3(x: -1.75, y: 0, z: 0) // x+: forward, y+: top, z+: right
+        
+        // Reset damping values
+        ball.physicsBody?.angularDamping = 0.1
+        ball.physicsBody?.damping = 0.1
         print("Reset ball position.")
+    }
+    
+    func slowTheBall() {
+        // Gradually bring the ball to a complete stop using damping
+        ball.physicsBody?.angularDamping = 1.0 // Apply angular damping to stop rotation
+        ball.physicsBody?.damping = 1.0 // Apply linear damping to stop translation
     }
     
     func resetCamera() {
@@ -233,7 +267,7 @@ import SwiftUI
 @available(iOS 13, *)
 struct BowlingViewController_Preview: PreviewProvider {
     static var previews: some View {
-        BowlingViewController().showPreview()
+        BowlingViewController().showPreview().ignoresSafeArea()
     }
 }
 #endif
