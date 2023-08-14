@@ -32,7 +32,10 @@ class BowlingRefViewController: UIViewController, SessionDelegate, SCNPhysicsCon
     let forceScaleFactor: Float = 150.0 // allows to scale the forceMagnitude to a value that feels right within the context of the game
     
     var ballIsMoving = false
-    var ballRestThreshold: Float = 0.1
+    var ballRestThreshold: Float = 0.15
+    var arePinsHitted = false
+    var countScore = false
+    var score = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +71,7 @@ class BowlingRefViewController: UIViewController, SessionDelegate, SCNPhysicsCon
         
         // Add ball scene
         ball = ballNodeData.node
+        ball.name = "Ball"
         ball.physicsBody = SCNPhysicsBody(type: .dynamic, shape: ballShape)
         ball.physicsBody?.isAffectedByGravity = true
         ball.physicsBody?.velocity = SCNVector3(x: 0, y: 0, z: 0)
@@ -154,9 +158,9 @@ class BowlingRefViewController: UIViewController, SessionDelegate, SCNPhysicsCon
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didSimulatePhysicsAtTime time: TimeInterval) {
-        // Reset the ball position if the ball has done moving
-        
-        if (ball.position.x > -0.5 || ball.presentation.position.x > 0.5) {
+        print("Ball position:")
+        print(ball.presentation.position.x)
+        if (ball.position.x > -0.5 || ball.presentation.position.x > 0.5) && (ball.presentation.position.x < 33) {
             if ballIsMoving {
                 let velocity = ball.physicsBody!.velocity
                 let speed = sqrt(velocity.x * velocity.x + velocity.y * velocity.y + velocity.z * velocity.z)
@@ -169,15 +173,44 @@ class BowlingRefViewController: UIViewController, SessionDelegate, SCNPhysicsCon
                         // Camera mengikuti bola (sumbu z- camera ke depan)
                         camera.position.z = (-1) * (ballOffset - 8) // jarak camera dengan bola dari belakang bola
                     }
-                } else {
-                    // If the ball's speed is below the threshold, consider it as stopped
+                } else { // If the ball's speed is below the threshold, consider it as stopped
                     ballIsMoving = false
-                    resetTheBall()
-                    resetCamera()
+                    countScore = true
                 }
+            } else if countScore {
+                if arePinsHitted {
+                    DispatchQueue.main.async {
+                        self.score += 1
+                        self.arePinsHitted = false
+                        print("Score:")
+                        print(self.score)
+                    }
+                }
+                countScore = false
+                
+                // Reset position if the ball has done moving
+                resetTheBall()
+                resetCamera()
             }
         } else {
+            // Reset the ball if the ball exit the arena
+            if ball.presentation.position.x > 33 {
+                ballIsMoving = false
+                resetTheBall()
+                resetCamera()
+            }
             print("No ball physics")
+        }
+    }
+    
+    // Add event if there is collision between ball and the pins
+    func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact) {
+        if ballIsMoving {
+            if contact.nodeA.name == "Ball" || contact.nodeB.name == "Pin" {
+                arePinsHitted = true
+            } else if contact.nodeA.name == "Pin" && contact.nodeB.name == "Ball"{
+                arePinsHitted = true
+            }
         }
     }
     
