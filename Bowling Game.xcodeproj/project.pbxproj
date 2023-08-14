@@ -15,15 +15,6 @@
 		05491C2E2A77B854008C59A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05491C2D2A77B854008C59A5 /* AppDelegate.swift */; };
 		05491C302A77B854008C59A5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05491C2F2A77B854008C59A5 /* GameViewController.swift */; };
 		05491C332A77B854008C59A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05491C312A77B854008C59A5 /* Main.storyboard */; };
-		05491C352A77B854008C59A5 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 05491C022A77B853008C59A5 /* Actions.sks */; };
-		05491C362A77B854008C59A5 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 05491C022A77B853008C59A5 /* Actions.sks */; };
-		05491C372A77B854008C59A5 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 05491C022A77B853008C59A5 /* Actions.sks */; };
-		05491C382A77B854008C59A5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 05491C032A77B853008C59A5 /* GameScene.sks */; };
-		05491C392A77B854008C59A5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 05491C032A77B853008C59A5 /* GameScene.sks */; };
-		05491C3A2A77B854008C59A5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 05491C032A77B853008C59A5 /* GameScene.sks */; };
-		05491C3B2A77B854008C59A5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05491C042A77B853008C59A5 /* GameScene.swift */; };
-		05491C3C2A77B854008C59A5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05491C042A77B853008C59A5 /* GameScene.swift */; };
-		05491C3D2A77B854008C59A5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05491C042A77B853008C59A5 /* GameScene.swift */; };
 		05491C3E2A77B854008C59A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05491C052A77B854008C59A5 /* Assets.xcassets */; };
 		05491C3F2A77B854008C59A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05491C052A77B854008C59A5 /* Assets.xcassets */; };
 		05491C402A77B854008C59A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05491C052A77B854008C59A5 /* Assets.xcassets */; };
@@ -104,9 +95,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		05491C022A77B853008C59A5 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		05491C032A77B853008C59A5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		05491C042A77B853008C59A5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		05491C052A77B854008C59A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05491C0A2A77B854008C59A5 /* Bowling Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bowling Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05491C0D2A77B854008C59A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -215,9 +203,6 @@
 				05D11B842A7FA0EE00AE174B /* Component */,
 				05D11B7B2A7F9F8000AE174B /* Extension */,
 				05D11B932A809F5900AE174B /* art.scnassets */,
-				05491C022A77B853008C59A5 /* Actions.sks */,
-				05491C032A77B853008C59A5 /* GameScene.sks */,
-				05491C042A77B853008C59A5 /* GameScene.swift */,
 				05D11B982A809FCA00AE174B /* BowlingScene.swift */,
 				0572B09D2A80E4B700E9533D /* SessionDelegater.swift */,
 				05491C052A77B854008C59A5 /* Assets.xcassets */,
@@ -515,9 +500,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05491C382A77B854008C59A5 /* GameScene.sks in Resources */,
 				05D11B942A809F5900AE174B /* art.scnassets in Resources */,
-				05491C352A77B854008C59A5 /* Actions.sks in Resources */,
 				05491C3E2A77B854008C59A5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,10 +509,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05491C392A77B854008C59A5 /* GameScene.sks in Resources */,
 				05D11B952A809F5900AE174B /* art.scnassets in Resources */,
 				05491C232A77B854008C59A5 /* Main.storyboard in Resources */,
-				05491C362A77B854008C59A5 /* Actions.sks in Resources */,
 				05491C262A77B854008C59A5 /* LaunchScreen.storyboard in Resources */,
 				05491C3F2A77B854008C59A5 /* Assets.xcassets in Resources */,
 			);
@@ -540,10 +521,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				05491C332A77B854008C59A5 /* Main.storyboard in Resources */,
-				05491C3A2A77B854008C59A5 /* GameScene.sks in Resources */,
 				05D11B962A809F5900AE174B /* art.scnassets in Resources */,
 				05491C402A77B854008C59A5 /* Assets.xcassets in Resources */,
-				05491C372A77B854008C59A5 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +561,6 @@
 				05D11B812A7F9FBB00AE174B /* UIViewExtension.swift in Sources */,
 				05587E662A8A1275002E135A /* ContentView.swift in Sources */,
 				05587E682A8A174D002E135A /* BowlingGameView.swift in Sources */,
-				05491C3B2A77B854008C59A5 /* GameScene.swift in Sources */,
 				05D11B992A809FCA00AE174B /* BowlingScene.swift in Sources */,
 				054AA4402A822E6900014122 /* ThrowingData.swift in Sources */,
 				05D11B872A7FA13100AE174B /* BallViewController.swift in Sources */,
@@ -598,7 +576,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				05D11B822A7F9FBB00AE174B /* UIViewExtension.swift in Sources */,
-				05491C3C2A77B854008C59A5 /* GameScene.swift in Sources */,
 				05D11B9A2A809FCA00AE174B /* BowlingScene.swift in Sources */,
 				05491C202A77B854008C59A5 /* GameViewController.swift in Sources */,
 				05D11B882A7FA13100AE174B /* BallViewController.swift in Sources */,
@@ -612,7 +589,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				05D11B832A7F9FBB00AE174B /* UIViewExtension.swift in Sources */,
-				05491C3D2A77B854008C59A5 /* GameScene.swift in Sources */,
 				05D11B9B2A809FCA00AE174B /* BowlingScene.swift in Sources */,
 				05491C302A77B854008C59A5 /* GameViewController.swift in Sources */,
 				05D11B892A7FA13100AE174B /* BallViewController.swift in Sources */,
