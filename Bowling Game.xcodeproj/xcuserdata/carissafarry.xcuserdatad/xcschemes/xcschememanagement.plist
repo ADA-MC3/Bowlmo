@@ -7,22 +7,45 @@
 		<key>Bowling Game Watch App.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Bowling Game iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Bowling Game macOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Bowling Game tvOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>05491C092A77B854008C59A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>059E80B42A7A50D90069EF60</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>059E80C32A7A50DA0069EF60</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>059E80CD2A7A50DA0069EF60</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
