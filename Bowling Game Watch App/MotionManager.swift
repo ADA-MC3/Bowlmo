@@ -18,7 +18,6 @@ class MotionManager: SessionDelegate {
     let queue = OperationQueue()
     let wristLocationIsRight = WKInterfaceDevice.current().wristLocation == .right
     
-    
     // MARK: Application Specific Constants
     
     // These constants were derived from data and should be further tuned for your needs.
@@ -63,6 +62,7 @@ class MotionManager: SessionDelegate {
                 self.processDeviceMotion(deviceMotion!)
             }
         }
+        sendStartTheGame(startGame: true)
     }
     
     // MARK: Motion Processing
@@ -125,9 +125,20 @@ class MotionManager: SessionDelegate {
         print("Received distance on iWatch: \(distance), direction x: \(direction[0]), direction y: \(direction[1]), direction z: \(direction[2])")
     }
     
+    func didReceiveStartStatus(startGame: Bool) {
+        //
+    }
+    
     // Function to send distance and direction data to the paired Apple Watch
     func sendDistanceAndDirectionToWatch(distance: Double, direction: (x: Double, y: Double, z: Double)) {
         let data: [String: Any] = ["distance": distance, "direction": [direction.x, direction.y, direction.z]]
         sessionDelegater.session.sendMessage(data, replyHandler: nil, errorHandler: nil)
+    }
+    
+    func sendStartTheGame(startGame: Bool) {
+        let data: [String: Any] = ["startGame" : startGame]
+        sessionDelegater.session.sendMessage(data, replyHandler: nil, errorHandler: nil)
+        print("Game status sent!")
+        print(data)
     }
 }

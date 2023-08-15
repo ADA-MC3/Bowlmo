@@ -8,6 +8,7 @@
 import WatchConnectivity
 
 protocol SessionDelegate: AnyObject {
+    func didReceiveStartStatus(startGame: Bool)
     func didReceiveData(distance: Double, direction: [Double])
 }
 
@@ -29,12 +30,17 @@ class SessionDelegater: NSObject, WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-       if let distance = message["distance"] as? Double,
+        if let distance = message["distance"] as? Double,
           let direction = message["direction"] as? [Double] {
-        
+
            // Handle the received distance and direction data
            delegate?.didReceiveData(distance: distance, direction: direction)
-       }
+        }
+        
+        if let start = message["startGame"] as? Bool {
+            // Handle the received start status
+            delegate?.didReceiveStartStatus(startGame: start)
+        }
     }
     
 #if os(iOS)

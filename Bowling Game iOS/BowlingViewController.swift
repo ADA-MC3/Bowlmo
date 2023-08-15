@@ -36,6 +36,9 @@ class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContac
     var countScore = false
     @Published var score = 0
     
+    var showStartLabel = true
+    var showScore = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sessionDelegater = SessionDelegater()
@@ -95,6 +98,15 @@ class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContac
         resetCamera()
     }
     
+    func didReceiveStartStatus(startGame: Bool) {
+        DispatchQueue.main.async {
+            self.showStartLabel = !startGame
+            self.objectWillChange.send()
+            print("Game status updated:")
+            print(self.showStartLabel)
+        }
+    }
+    
     // Conform to SessionDelegate methods
     func didReceiveData(distance: Double, direction: [Double]) {
         // Handle the received data
@@ -120,8 +132,10 @@ class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContac
         )
         print(throwingData!)
         
-        // Use the received data to throw the ball
-        throwTheBall()
+        if !showScore && !showStartLabel {
+            // Use the received data to throw the ball
+            throwTheBall()
+        }
     }
     
     func throwTheBall() {
@@ -180,22 +194,25 @@ class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContac
         print(speed)
         
         if (ball.position.x > -0.5 || ball.presentation.position.x > 0.5) && (ball.presentation.position.x < 33) {
-            if ballIsMoving {
-                // Jika bola bergerak ke depan (sumbu x+ bola ke depan)
+            if ballIsMoving && !showScore {
+                // If the ball moves forward (x+ axis, ball forward)
                 if speed > ballRestThreshold {
                     camera.look(at: ball.presentation.position)
                     let ballOffset = ball.presentation.position.x
                     if ballOffset > 6 {
-                        // Camera mengikuti bola (sumbu z- camera ke depan)
-                        camera.position.z = (-1) * (ballOffset - 8) // jarak camera dengan bola dari belakang bola
+                        // Camera follows the ball (z- axis, camera forward)
+                        camera.position.z = (-1) * (ballOffset - 8) // the distance between the camera and the ball from behind the ball
                     }
                 } else { // If the ball's speed is below the threshold, consider it as stopped
-                    ballIsMoving = false
-                    slowTheBall()
+                    DispatchQueue.main.async {
+                        self.ballIsMoving = false
+                        self.showScore = true // Show the score after the ball stopped
+                        self.objectWillChange.send()
+                        self.slowTheBall()
+                    }
                     
                     // Schedule the ball reset after damping has taken effect
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                        self.score = 0
                         self.resetTheBall()
                         self.resetCamera()
                         self.resetPins()
@@ -209,7 +226,9 @@ class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContac
                 resetTheBall()
                 resetCamera()
             }
-            print("No ball physics")
+            if !showStartLabel {
+                print("No ball physics")
+            }
         }
     }
     

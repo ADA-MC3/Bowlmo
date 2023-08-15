@@ -47,6 +47,7 @@ class WorkoutManager {
         session.end()
         self.session = nil
 
+        motionManager.sendStartTheGame(startGame: false)
         // Stop device motion updates.
         motionManager.motionManager.stopDeviceMotionUpdates()
     }
