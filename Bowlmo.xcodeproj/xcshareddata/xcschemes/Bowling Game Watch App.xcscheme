@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "059E80B42A7A50D90069EF60"
-               BuildableName = "Bowling Game Watch App.app"
-               BlueprintName = "Bowling Game Watch App"
-               ReferencedContainer = "container:Bowling Game.xcodeproj">
+               BuildableName = "Bowlmo Watch App.app"
+               BlueprintName = "Bowlmo Watch App"
+               ReferencedContainer = "container:Bowlmo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "05491C092A77B854008C59A5"
-               BuildableName = "Bowling Game.app"
-               BlueprintName = "Bowling Game iOS"
-               ReferencedContainer = "container:Bowling Game.xcodeproj">
+               BuildableName = "Bowlmo.app"
+               BlueprintName = "Bowlmo iOS"
+               ReferencedContainer = "container:Bowlmo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,7 +51,7 @@
                BlueprintIdentifier = "059E80C32A7A50DA0069EF60"
                BuildableName = "Bowling Game Watch AppTests.xctest"
                BlueprintName = "Bowling Game Watch AppTests"
-               ReferencedContainer = "container:Bowling Game.xcodeproj">
+               ReferencedContainer = "container:Bowlmo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -62,7 +62,7 @@
                BlueprintIdentifier = "059E80CD2A7A50DA0069EF60"
                BuildableName = "Bowling Game Watch AppUITests.xctest"
                BlueprintName = "Bowling Game Watch AppUITests"
-               ReferencedContainer = "container:Bowling Game.xcodeproj">
+               ReferencedContainer = "container:Bowlmo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "059E80B42A7A50D90069EF60"
-            BuildableName = "Bowling Game Watch App.app"
-            BlueprintName = "Bowling Game Watch App"
-            ReferencedContainer = "container:Bowling Game.xcodeproj">
+            BuildableName = "Bowlmo Watch App.app"
+            BlueprintName = "Bowlmo Watch App"
+            ReferencedContainer = "container:Bowlmo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -99,9 +99,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "059E80B42A7A50D90069EF60"
-            BuildableName = "Bowling Game Watch App.app"
-            BlueprintName = "Bowling Game Watch App"
-            ReferencedContainer = "container:Bowling Game.xcodeproj">
+            BuildableName = "Bowlmo Watch App.app"
+            BlueprintName = "Bowlmo Watch App"
+            ReferencedContainer = "container:Bowlmo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

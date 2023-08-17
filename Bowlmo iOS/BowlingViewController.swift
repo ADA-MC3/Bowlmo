@@ -64,7 +64,7 @@ class BowlingViewController: UIViewController, SessionDelegate, SCNPhysicsContac
     
     func setUpScene() {
         // Create a new scene
-        scene = SCNScene(named: "../art.scnassets/ally.scn")
+        scene = SCNScene(named: "art.scnassets/ally.scn")
         
         camera = scene.rootNode.childNode(withName: "mainCamera", recursively: true)!
         pins = scene.rootNode.childNode(withName: "mainPins", recursively: true)!

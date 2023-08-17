@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "05491C092A77B854008C59A5"
-               BuildableName = "Bowling Game.app"
-               BlueprintName = "Bowling Game iOS"
-               ReferencedContainer = "container:Bowling Game.xcodeproj">
+               BuildableName = "Bowlmo.app"
+               BlueprintName = "Bowlmo iOS"
+               ReferencedContainer = "container:Bowlmo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "05491C092A77B854008C59A5"
-            BuildableName = "Bowling Game.app"
-            BlueprintName = "Bowling Game iOS"
-            ReferencedContainer = "container:Bowling Game.xcodeproj">
+            BuildableName = "Bowlmo.app"
+            BlueprintName = "Bowlmo iOS"
+            ReferencedContainer = "container:Bowlmo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "05491C092A77B854008C59A5"
-            BuildableName = "Bowling Game.app"
-            BlueprintName = "Bowling Game iOS"
-            ReferencedContainer = "container:Bowling Game.xcodeproj">
+            BuildableName = "Bowlmo.app"
+            BlueprintName = "Bowlmo iOS"
+            ReferencedContainer = "container:Bowlmo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

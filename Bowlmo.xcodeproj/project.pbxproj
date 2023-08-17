@@ -17,16 +17,15 @@
 		0572B09E2A80E4B700E9533D /* SessionDelegater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572B09D2A80E4B700E9533D /* SessionDelegater.swift */; };
 		0572B09F2A80E4B700E9533D /* SessionDelegater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0572B09D2A80E4B700E9533D /* SessionDelegater.swift */; };
 		05796A882A80A96400A36A97 /* BowlingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05796A872A80A96400A36A97 /* BowlingViewController.swift */; };
-		059E80B82A7A50D90069EF60 /* Bowling_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80B72A7A50D90069EF60 /* Bowling_GameApp.swift */; };
+		059E80B82A7A50D90069EF60 /* Bowlmo_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80B72A7A50D90069EF60 /* Bowlmo_App.swift */; };
 		059E80BA2A7A50D90069EF60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80B92A7A50D90069EF60 /* ContentView.swift */; };
-		059E80BF2A7A50DA0069EF60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059E80BE2A7A50DA0069EF60 /* Preview Assets.xcassets */; };
-		059E80D82A7A50DA0069EF60 /* Bowling Game Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 059E80B52A7A50D90069EF60 /* Bowling Game Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		059E80D82A7A50DA0069EF60 /* Bowlmo Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 059E80B52A7A50D90069EF60 /* Bowlmo Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		059E80E32A7A515E0069EF60 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80AF2A7A4F450069EF60 /* MotionManager.swift */; };
 		059E80E52A7A56620069EF60 /* RunningBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E80E42A7A56620069EF60 /* RunningBuffer.swift */; };
+		059FDCD82A8E4A77002D2D20 /* Preview Content.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 059FDCD72A8E4A77002D2D20 /* Preview Content.xcassets */; };
 		05D11B7D2A7F9F9200AE174B /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B7C2A7F9F9200AE174B /* UIViewControllerExtension.swift */; };
 		05D11B812A7F9FBB00AE174B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B802A7F9FBB00AE174B /* UIViewExtension.swift */; };
 		05D11B872A7FA13100AE174B /* BallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B862A7FA13100AE174B /* BallViewController.swift */; };
-		05D11B8C2A7FA31500AE174B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B8B2A7FA31500AE174B /* Assets.xcassets */; };
 		05D11B942A809F5900AE174B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B932A809F5900AE174B /* art.scnassets */; };
 		05D11B972A809F5900AE174B /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 05D11B932A809F5900AE174B /* art.scnassets */; };
 		05D11B992A809FCA00AE174B /* BowlingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D11B982A809FCA00AE174B /* BowlingScene.swift */; };
@@ -35,7 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		052941632A8CE13B0057F19B /* PBXContainerItemProxy */ = {
+		054CE7E72A8E489A00CA5563 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 05491BFD2A77B852008C59A5 /* Project object */;
 			proxyType = 1;
@@ -51,7 +50,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				059E80D82A7A50DA0069EF60 /* Bowling Game Watch App.app in Embed Watch Content */,
+				059E80D82A7A50DA0069EF60 /* Bowlmo Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,9 +58,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		052941652A8CE3F50057F19B /* Bowling Game iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bowling Game iOS.entitlements"; sourceTree = "<group>"; };
+		052941652A8CE3F50057F19B /* Bowlmo iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bowlmo iOS.entitlements"; sourceTree = "<group>"; };
 		05491C052A77B854008C59A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		05491C0A2A77B854008C59A5 /* Bowling Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bowling Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05491C0A2A77B854008C59A5 /* Bowlmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bowlmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05491C0D2A77B854008C59A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		054AA43F2A822E6900014122 /* ThrowingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowingData.swift; sourceTree = "<group>"; };
 		05587E632A8A11FA002E135A /* BowlingGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingGameApp.swift; sourceTree = "<group>"; };
@@ -70,19 +69,18 @@
 		0572B09D2A80E4B700E9533D /* SessionDelegater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegater.swift; sourceTree = "<group>"; };
 		05796A872A80A96400A36A97 /* BowlingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingViewController.swift; sourceTree = "<group>"; };
 		059E80AF2A7A4F450069EF60 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
-		059E80B52A7A50D90069EF60 /* Bowling Game Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bowling Game Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		059E80B72A7A50D90069EF60 /* Bowling_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowling_GameApp.swift; sourceTree = "<group>"; };
+		059E80B52A7A50D90069EF60 /* Bowlmo Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bowlmo Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		059E80B72A7A50D90069EF60 /* Bowlmo_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bowlmo_App.swift; sourceTree = "<group>"; };
 		059E80B92A7A50D90069EF60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		059E80BE2A7A50DA0069EF60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		059E80E42A7A56620069EF60 /* RunningBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningBuffer.swift; sourceTree = "<group>"; };
-		05C3B3C82A7CD98300607281 /* Bowling Game Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bowling Game Watch App.entitlements"; sourceTree = "<group>"; };
+		059FDCD72A8E4A77002D2D20 /* Preview Content.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Content.xcassets"; sourceTree = "<group>"; };
+		05C3B3C82A7CD98300607281 /* Bowlmo Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bowlmo Watch App.entitlements"; sourceTree = "<group>"; };
 		05D11B7C2A7F9F9200AE174B /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		05D11B802A7F9FBB00AE174B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		05D11B862A7FA13100AE174B /* BallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallViewController.swift; sourceTree = "<group>"; };
-		05D11B8B2A7FA31500AE174B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Bowling Game Watch App/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		05D11B932A809F5900AE174B /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		05D11B982A809FCA00AE174B /* BowlingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingScene.swift; sourceTree = "<group>"; };
-		05E1E2EB2A7A6997009AAA4E /* Bowling-Game-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bowling-Game-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		05E1E2EB2A7A6997009AAA4E /* Bowlmo-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bowlmo-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		05E1E2EC2A7A6C27009AAA4E /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,14 +105,15 @@
 		05491BFC2A77B852008C59A5 = {
 			isa = PBXGroup;
 			children = (
-				05491C012A77B852008C59A5 /* Bowling Game Shared */,
-				05491C0C2A77B854008C59A5 /* Bowling Game iOS */,
-				059E80B62A7A50D90069EF60 /* Bowling Game Watch App */,
+				05491C012A77B852008C59A5 /* Bowlmo Shared */,
+				05491C0C2A77B854008C59A5 /* Bowlmo iOS */,
+				059E80B62A7A50D90069EF60 /* Bowlmo Watch App */,
 				05491C0B2A77B854008C59A5 /* Products */,
+				054CE7E22A8E42CF00CA5563 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		05491C012A77B852008C59A5 /* Bowling Game Shared */ = {
+		05491C012A77B852008C59A5 /* Bowlmo Shared */ = {
 			isa = PBXGroup;
 			children = (
 				054AA43E2A822E4C00014122 /* Model */,
@@ -125,29 +124,29 @@
 				0572B09D2A80E4B700E9533D /* SessionDelegater.swift */,
 				05491C052A77B854008C59A5 /* Assets.xcassets */,
 			);
-			path = "Bowling Game Shared";
+			path = "Bowlmo Shared";
 			sourceTree = "<group>";
 		};
 		05491C0B2A77B854008C59A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				05491C0A2A77B854008C59A5 /* Bowling Game.app */,
-				059E80B52A7A50D90069EF60 /* Bowling Game Watch App.app */,
+				05491C0A2A77B854008C59A5 /* Bowlmo.app */,
+				059E80B52A7A50D90069EF60 /* Bowlmo Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		05491C0C2A77B854008C59A5 /* Bowling Game iOS */ = {
+		05491C0C2A77B854008C59A5 /* Bowlmo iOS */ = {
 			isa = PBXGroup;
 			children = (
-				052941652A8CE3F50057F19B /* Bowling Game iOS.entitlements */,
+				052941652A8CE3F50057F19B /* Bowlmo iOS.entitlements */,
 				05587E672A8A174D002E135A /* BowlingGameView.swift */,
 				05587E652A8A1275002E135A /* ContentView.swift */,
 				05587E632A8A11FA002E135A /* BowlingGameApp.swift */,
 				05491C0D2A77B854008C59A5 /* AppDelegate.swift */,
 				05796A872A80A96400A36A97 /* BowlingViewController.swift */,
 			);
-			path = "Bowling Game iOS";
+			path = "Bowlmo iOS";
 			sourceTree = "<group>";
 		};
 		054AA43E2A822E4C00014122 /* Model */ = {
@@ -158,28 +157,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		059E80B62A7A50D90069EF60 /* Bowling Game Watch App */ = {
+		054CE7E22A8E42CF00CA5563 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				05C3B3C82A7CD98300607281 /* Bowling Game Watch App.entitlements */,
-				05E1E2EB2A7A6997009AAA4E /* Bowling-Game-Watch-App-Info.plist */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		059E80B62A7A50D90069EF60 /* Bowlmo Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				05C3B3C82A7CD98300607281 /* Bowlmo Watch App.entitlements */,
+				05E1E2EB2A7A6997009AAA4E /* Bowlmo-Watch-App-Info.plist */,
 				05E1E2EC2A7A6C27009AAA4E /* WorkoutManager.swift */,
 				059E80AF2A7A4F450069EF60 /* MotionManager.swift */,
 				059E80E42A7A56620069EF60 /* RunningBuffer.swift */,
-				059E80B72A7A50D90069EF60 /* Bowling_GameApp.swift */,
+				059E80B72A7A50D90069EF60 /* Bowlmo_App.swift */,
 				059E80B92A7A50D90069EF60 /* ContentView.swift */,
-				05D11B8B2A7FA31500AE174B /* Assets.xcassets */,
-				059E80BD2A7A50DA0069EF60 /* Preview Content */,
+				059FDCD72A8E4A77002D2D20 /* Preview Content.xcassets */,
 			);
-			path = "Bowling Game Watch App";
-			sourceTree = "<group>";
-		};
-		059E80BD2A7A50DA0069EF60 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				059E80BE2A7A50DA0069EF60 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = "Bowlmo Watch App";
 			sourceTree = "<group>";
 		};
 		05D11B7B2A7F9F8000AE174B /* Extension */ = {
@@ -210,9 +207,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		05491C092A77B854008C59A5 /* Bowling Game iOS */ = {
+		05491C092A77B854008C59A5 /* Bowlmo iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 05491C432A77B854008C59A5 /* Build configuration list for PBXNativeTarget "Bowling Game iOS" */;
+			buildConfigurationList = 05491C432A77B854008C59A5 /* Build configuration list for PBXNativeTarget "Bowlmo iOS" */;
 			buildPhases = (
 				05491C062A77B854008C59A5 /* Sources */,
 				05491C072A77B854008C59A5 /* Frameworks */,
@@ -222,16 +219,16 @@
 			buildRules = (
 			);
 			dependencies = (
-				052941642A8CE13B0057F19B /* PBXTargetDependency */,
+				054CE7E82A8E489A00CA5563 /* PBXTargetDependency */,
 			);
-			name = "Bowling Game iOS";
+			name = "Bowlmo iOS";
 			productName = "Bowling Game iOS";
-			productReference = 05491C0A2A77B854008C59A5 /* Bowling Game.app */;
+			productReference = 05491C0A2A77B854008C59A5 /* Bowlmo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		059E80B42A7A50D90069EF60 /* Bowling Game Watch App */ = {
+		059E80B42A7A50D90069EF60 /* Bowlmo Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 059E80D92A7A50DA0069EF60 /* Build configuration list for PBXNativeTarget "Bowling Game Watch App" */;
+			buildConfigurationList = 059E80D92A7A50DA0069EF60 /* Build configuration list for PBXNativeTarget "Bowlmo Watch App" */;
 			buildPhases = (
 				059E80B12A7A50D90069EF60 /* Sources */,
 				059E80B22A7A50D90069EF60 /* Frameworks */,
@@ -241,9 +238,9 @@
 			);
 			dependencies = (
 			);
-			name = "Bowling Game Watch App";
+			name = "Bowlmo Watch App";
 			productName = "Bowling Game Watch App";
-			productReference = 059E80B52A7A50D90069EF60 /* Bowling Game Watch App.app */;
+			productReference = 059E80B52A7A50D90069EF60 /* Bowlmo Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +261,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 05491C002A77B852008C59A5 /* Build configuration list for PBXProject "Bowling Game" */;
+			buildConfigurationList = 05491C002A77B852008C59A5 /* Build configuration list for PBXProject "Bowlmo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -277,8 +274,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				05491C092A77B854008C59A5 /* Bowling Game iOS */,
-				059E80B42A7A50D90069EF60 /* Bowling Game Watch App */,
+				05491C092A77B854008C59A5 /* Bowlmo iOS */,
+				059E80B42A7A50D90069EF60 /* Bowlmo Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -298,8 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05D11B972A809F5900AE174B /* art.scnassets in Resources */,
-				05D11B8C2A7FA31500AE174B /* Assets.xcassets in Resources */,
-				059E80BF2A7A50DA0069EF60 /* Preview Assets.xcassets in Resources */,
+				059FDCD82A8E4A77002D2D20 /* Preview Content.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,17 +331,17 @@
 				05E1E2ED2A7A6C27009AAA4E /* WorkoutManager.swift in Sources */,
 				05D11B9C2A809FCA00AE174B /* BowlingScene.swift in Sources */,
 				059E80E32A7A515E0069EF60 /* MotionManager.swift in Sources */,
-				059E80B82A7A50D90069EF60 /* Bowling_GameApp.swift in Sources */,
+				059E80B82A7A50D90069EF60 /* Bowlmo_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		052941642A8CE13B0057F19B /* PBXTargetDependency */ = {
+		054CE7E82A8E489A00CA5563 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 059E80B42A7A50D90069EF60 /* Bowling Game Watch App */;
-			targetProxy = 052941632A8CE13B0057F19B /* PBXContainerItemProxy */;
+			target = 059E80B42A7A50D90069EF60 /* Bowlmo Watch App */;
+			targetProxy = 054CE7E72A8E489A00CA5563 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -471,14 +467,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = iOSAppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Bowling Game iOS/Bowling Game iOS.entitlements";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Bowlmo iOS/Bowlmo iOS.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BJAYFXKN5Y;
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
 				INFOPLIST_KEY_CFBundleDisplayName = Bowlmo;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.family-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -486,6 +484,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_KEY_WKCompanionAppBundleIdentifier[sdk=*]" = com.carissafarry.Bowlmo.watchkitapp;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,7 +492,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.carissafarry.Bowlmo;
-				PRODUCT_NAME = "Bowling Game";
+				PRODUCT_NAME = Bowlmo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -509,9 +508,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = iOSAppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Bowling Game iOS/Bowling Game iOS.entitlements";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Bowlmo iOS/Bowlmo iOS.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -524,6 +524,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				"INFOPLIST_KEY_WKCompanionAppBundleIdentifier[sdk=*]" = com.carissafarry.Bowlmo.watchkitapp;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -531,7 +532,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.carissafarry.Bowlmo;
-				PRODUCT_NAME = "Bowling Game";
+				PRODUCT_NAME = Bowlmo;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -547,17 +548,18 @@
 		059E80DA2A7A50DA0069EF60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = watchOSAppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Bowling Game Watch App/Bowling Game Watch App.entitlements";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Bowlmo Watch App/Bowlmo Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Bowling Game Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = BJAYFXKN5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Bowling-Game-Watch-App-Info.plist";
+				INFOPLIST_FILE = "Bowlmo-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Bowlmo;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.carissafarry.Bowlmo;
@@ -581,17 +583,18 @@
 		059E80DB2A7A50DA0069EF60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = watchOSAppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Bowling Game Watch App/Bowling Game Watch App.entitlements";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = "Bowlmo Watch App/Bowlmo Watch App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Bowling Game Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = BJAYFXKN5Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Bowling-Game-Watch-App-Info.plist";
+				INFOPLIST_FILE = "Bowlmo-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Bowlmo;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.carissafarry.Bowlmo;
@@ -616,7 +619,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05491C002A77B852008C59A5 /* Build configuration list for PBXProject "Bowling Game" */ = {
+		05491C002A77B852008C59A5 /* Build configuration list for PBXProject "Bowlmo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05491C412A77B854008C59A5 /* Debug */,
@@ -625,7 +628,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		05491C432A77B854008C59A5 /* Build configuration list for PBXNativeTarget "Bowling Game iOS" */ = {
+		05491C432A77B854008C59A5 /* Build configuration list for PBXNativeTarget "Bowlmo iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				05491C442A77B854008C59A5 /* Debug */,
@@ -634,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		059E80D92A7A50DA0069EF60 /* Build configuration list for PBXNativeTarget "Bowling Game Watch App" */ = {
+		059E80D92A7A50DA0069EF60 /* Build configuration list for PBXNativeTarget "Bowlmo Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				059E80DA2A7A50DA0069EF60 /* Debug */,
