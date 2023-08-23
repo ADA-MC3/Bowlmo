@@ -18,7 +18,7 @@ The Bowling Game App is a fun and interactive iOS game that allows users to play
 
 1. Clone the repository to your local machine.
    <pre>
-   git clone https://github.com/your-username/bowling-game-app.git
+   git clone https://github.com/ADA-MC3/Bowlmo.git
    </pre>
    
 3. Open the Xcode project (`BowlingGameApp.xcodeproj`) using Xcode.
