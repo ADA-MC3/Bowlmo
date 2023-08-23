@@ -1,6 +1,6 @@
-# Bowling Game App
+# Bowlmo (Bowling Game App)
 
-The Bowling Game App is a fun and interactive iOS game that allows users to play virtual bowling using their Apple Watch. The game utilizes the watch's motion tracking capabilities to simulate a realistic bowling experience, complete with ball throwing and pin interactions.
+The Bowlmo App is a fun and interactive iOS game that allows users to play virtual bowling using their Apple Watch. The game utilizes the watch's motion tracking capabilities to simulate a realistic bowling experience, complete with ball throwing and pin interactions.
 
 ## Features
 
@@ -21,7 +21,7 @@ The Bowling Game App is a fun and interactive iOS game that allows users to play
    git clone https://github.com/ADA-MC3/Bowlmo.git
    </pre>
    
-3. Open the Xcode project (`BowlingGameApp.xcodeproj`) using Xcode.
+3. Open the Xcode project (`Bowlmo.xcodeproj`) using Xcode.
 
 4. Build and run the app on a simulator or a connected iOS device.
 
@@ -42,13 +42,13 @@ The app utilizes the following dependencies:
 All dependencies are included in the Xcode project and managed via Swift Package Manager.
 
 ## Contributing
-- We welcome contributions from the community to improve the Bowling Game App. If you find any issues or have suggestions for enhancements, please feel free to submit a pull request or open an issue.
+- We welcome contributions from the community to improve the Bowlmo App. If you find any issues or have suggestions for enhancements, please feel free to submit a pull request or open an issue.
 - Use commit message based on Github Commit Convention
 https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13
 
 ## License
 
-The Bowling Game App is released under the [MIT License](LICENSE). You are free to use, modify, and distribute the code for personal and commercial purposes.
+The Bowlmo App is released under the [MIT License](LICENSE). You are free to use, modify, and distribute the code for personal and commercial purposes.
 
 ## Acknowledgments
 
